@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Chatbot Interface</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"
+    ></script>
+
+    <img
+      src="https://www.hillsgrammar.nsw.edu.au/sites/default/files/Logo.png"
+    />
+    <h1>Junior School AI Chat Interface Prototype</h1>
+    <br /><br />
+    <p>To use, choose options and click submit.</p>
+    <div class="input-container">
+      <input id="name" placeholder="Your Name" />
+    </div>
+    <label for="cars">Year Group</label>
+    <select id="cars" name="year">
+      <option value="kindy">Kindy</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+    </select>
+    <br />
+    <div class="input-container">
+      <input type="radio" id="html" name="fav_language" value="edit" />
+      <label for="html">Edit work</label><br />
+      <input type="radio" id="css" name="fav_language" value="suggest" />
+      <label for="css">Give suggestion</label><br />
+      <input type="radio" id="javascript" name="fav_language" value="mark" />
+      <label for="javascript">Mark</label>
+    </div>
+
+    <div class="input-container">
+      <label for="pretend">Personalise response:</label>
+      <input id="pretend" placeholder="who should I be for the response" />
+    </div>
+    <div class="input-container">
+      <textarea id="chat-input" placeholder="Work to mark..."></textarea>
+      <button id="submit">Send</button>
+    </div>
+    <div class="chat-container">
+      <div class="chat-box" id="chat-box">
+        <!-- Chat messages will be displayed here -->
+      </div>
+    </div>
+  </body>
+</html>
